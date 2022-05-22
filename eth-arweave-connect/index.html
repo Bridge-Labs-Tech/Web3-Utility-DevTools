@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eth-Arweave Address Connect</title>
+    <style>
+      /* basic page setup */
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 22px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+      }
+      input {
+        font-size: 22px;
+        line-height: 1.42857143;
+        color: #1b2bf8;
+        background-color: #fff;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 6px 12px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      button {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.42857143;
+        color: white;
+        cursor: pointer;
+        background-color: #1b2bf8;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 6px 12px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Eth-Arweave Address Connect</h1>
+        <p>
+          This is a simple tool to get the wallet address from Metamask and
+          ArConnect Extensions.
+        </p>
+        <p>
+          Wallet Address:
+          <input id="walletAddress" value="" type="text" />
+        </p>
+        <p>
+          <button onclick="metamaskConnect()">Get Ether Address</button>
+          <button onclick="arweaveConnect()">Get Arweave Address</button>
+        </p>
+      </div>
+    </div>
+    <script src="./wallet.js"></script>
+  </body>
+</html>
