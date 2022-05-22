@@ -5,7 +5,7 @@ We share some useful blockchain related codes here
 ## Resources
 
 - [x] [Connect to MetaMask and ArConnect](eth-arweave-connect)
-- [] Connect to Any Wallet using [WallectConnect](https://walletconnect.com/)
+- [ ] Connect to Any Wallet using [WallectConnect](https://walletconnect.com/)
 
 #
 
@@ -14,5 +14,5 @@ We share some useful blockchain related codes here
 </h2>
 <p align="center"><a href="/">Bridge Labs </a> is a Software Development Agency</p>
 <p align="center">
-  <img src="./media/bridge-labs-icon.png" width="100" />
+  <img src="./media/bridge-labs-icon.png" width="50" />
 </p>
