@@ -34,10 +34,10 @@ async function arweaveConnect() {
         name: "App Name",
         logo: "https://via.placeholder.com/512",
       });
-      const accounts = await arweaveWallet.getAllAddresses();
+      const accounts = await arweaveWallet.getActiveAddress();
       console.log("accounts", accounts);
       // set the address input value to the first account
-      addressInput.value = accounts[0];
+      addressInput.value = accounts;
     } catch (error) {
       console.error("Error Getting ArweaveWallet Address", error);
     }
