@@ -31,7 +31,7 @@ async function arweaveConnect() {
   if (typeof window.arweaveWallet !== "undefined") {
     // arConnect is installed
     try {
-      arweaveWallet.connect(["ACCESS_ADDRESS"], {
+      await arweaveWallet.connect(["ACCESS_ADDRESS"], {
         name: "App Name",
         logo: "https://via.placeholder.com/512",
       });
@@ -48,7 +48,7 @@ async function arweaveConnect() {
     alert("ArweaveWallet not Present");
     // open new tab to download arConnect
     window.open(
-      "https://chrome.google.com/webstore/detail/arconnect/einnioafmpimabjcddiinlhmijaionap/related"
+      "https://chrome.google.com/webstore/detail/arconnect/einnioafmpimabjcddiinlhmijaionap"
     );
   }
 }
