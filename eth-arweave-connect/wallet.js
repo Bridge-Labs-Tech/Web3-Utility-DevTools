@@ -20,7 +20,7 @@ async function metamaskConnect() {
     // metamask is not installed
     console.log("Metamask is not installed");
     alert("Metamask is not installed");
-    window.open("https://metamask.io/download.html");
+    window.open("https://metamask.io/download.html", (target = "_blank"));
   }
 }
 
@@ -48,7 +48,8 @@ async function arweaveConnect() {
     alert("ArweaveWallet not Present");
     // open new tab to download arConnect
     window.open(
-      "https://chrome.google.com/webstore/detail/arconnect/einnioafmpimabjcddiinlhmijaionap"
+      "https://chrome.google.com/webstore/detail/arconnect/einnioafmpimabjcddiinlhmijaionap",
+      (target = "_blank")
     );
   }
 }
