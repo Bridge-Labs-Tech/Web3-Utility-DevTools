@@ -1,4 +1,5 @@
 const addressInput = document.getElementById("walletAddress");
+const errorField = document.getElementById("error");
 
 // metamaskConnect function
 // docs: https://docs.metamask.io/guide/getting-started.html#basic-considerations
@@ -10,10 +11,12 @@ async function metamaskConnect() {
       const accounts = await ethereum.request({
         method: "eth_requestAccounts",
       });
+      errorField.innerHTML = "";
       console.log("accounts", accounts);
       // set the address input value to the first account
       addressInput.value = accounts[0];
     } catch (error) {
+      errorField.innerHTML = JSON.stringify(error);
       console.error("Error Getting Ethereum Address", error);
     }
   } else {
@@ -36,10 +39,12 @@ async function arweaveConnect() {
         logo: "https://via.placeholder.com/512",
       });
       const accounts = await arweaveWallet.getActiveAddress();
+      errorField.innerHTML = "";
       console.log("accounts", accounts);
       // set the address input value to the first account
       addressInput.value = accounts;
     } catch (error) {
+      errorField.innerHTML = JSON.stringify(error);
       console.error("Error Getting ArweaveWallet Address", error);
     }
   } else {
