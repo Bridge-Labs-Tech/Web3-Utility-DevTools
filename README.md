@@ -4,7 +4,7 @@ We share some useful blockchain related codes here
 
 ## TO-DO
 
-- [x] [Connect to MetaMask and ArConnect](/blockchain-Utility-DevTools/eth-arweave-connect)
+- [x] [Connect to MetaMask and ArConnect](/Web3-Utility-DevTools/eth-arweave-connect)
 - [ ] Connect to any Wallet using [WallectConnect](https://walletconnect.com/)
 
 #
