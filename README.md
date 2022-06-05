@@ -1,8 +1,8 @@
-# Blockchain-Utility-DevTools
+# Web3-Utility-DevTools
 
 We share some useful blockchain related codes here
 
-## TODO
+## TO-DO
 
 - [x] [Connect to MetaMask and ArConnect](/blockchain-Utility-DevTools/eth-arweave-connect)
 - [ ] Connect to any Wallet using [WallectConnect](https://walletconnect.com/)
